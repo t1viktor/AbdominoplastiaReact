@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-const modalimg01 = '../public/img/pessoaLavandoMaos.jpg';
-const modalimg02 = '../public/img/materiaisHigiene.jpg'
+const modalimg01 = '/img/pessoaLavandoMaos.jpg';
+const modalimg02 = '/img/materiaisHigiene.jpg'
 
 const tituloModal = "Higiene e Cuidados com a Ferida Operatória";
 

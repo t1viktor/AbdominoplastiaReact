@@ -1,5 +1,5 @@
-const qrCode = '../public/img/qrCode.jpeg';
-const logo = '../public/img/LOGO_TRANSPARENTE_1.png';
+const qrCode = '/img/qrCode.jpeg';
+const logo = '/img/LOGO_TRANSPARENTE_1.png';
 
 
 export default function Footer() {

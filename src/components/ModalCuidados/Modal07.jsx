@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const modalimg01 = '../public/img/pacienteTranquila.jpg';
+const modalimg01 = '/img/pacienteTranquila.jpg';
 
 const tituloModal = "Recomendações Finais para um Pós-operatório Tranquilo";
 

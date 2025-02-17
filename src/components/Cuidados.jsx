@@ -14,13 +14,13 @@ import cardimg05 from '../public/img/pacienteDeitado.jpg';
 import cardimg06 from '../public/img/pacienteDeitado.jpg';
 import cardimg07 from '../public/img/pacienteDeitado.jpg'; */
 
-const cardimg01 = '../public/img/pacienteDeitado.jpg';
-const cardimg02 = '../public/img/comidaSaudavel.jpg';
-const cardimg03 = '../public/img/pessoaLavandoMaos.jpg';
-const cardimg04 = '../public/img/CA1A2716.JPEG';
-const cardimg05 = '../public/img/cintaPosCirurgica.jpg';
-const cardimg06 = '../public/img/pessoaCurvada.jpg';
-const cardimg07 = '../public/img/fotoSorrindoMto.JPEG';
+const cardimg01 = '/img/pacienteDeitado.jpg';
+const cardimg02 = '/img/comidaSaudavel.jpg';
+const cardimg03 = '/img/pessoaLavandoMaos.jpg';
+const cardimg04 = '/img/CA1A2716.JPEG';
+const cardimg05 = '/img/cintaPosCirurgica.jpg';
+const cardimg06 = '/img/pessoaCurvada.jpg';
+const cardimg07 = '/img/fotoSorrindoMto.JPEG';
 
 const tittleCard01Cuidados = "Cuidados Imediatos";
 const li01Card01Cuidados = "Repouso adequado nas primeiras semanas";

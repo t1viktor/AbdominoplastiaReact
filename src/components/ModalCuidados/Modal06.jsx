@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const modalimg01 = '../public/img/pessoaCurvada.jpg';
+const modalimg01 = '/img/pessoaCurvada.jpg';
 
 const tituloModal = "Posições Corporais";
 

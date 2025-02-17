@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
-const modalimg01 = '../public/img/CA1A2644.JPEG';
-const modalimg02 = '../public/img/fotoExplicando.JPEG';
-const modalimg03 = '../public/img/fotoConsulta.JPEG';
+const modalimg01 = '/img/CA1A2644.JPEG';
+const modalimg02 = '/img/fotoExplicando.JPEG';
+const modalimg03 = '/img/fotoConsulta.JPEG';
 
 const tituloModal = "Fisioterapia Pós-operatória";
 
