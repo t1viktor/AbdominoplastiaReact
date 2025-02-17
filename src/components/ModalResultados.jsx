@@ -29,11 +29,11 @@ export default function ModalResultados() {
 
       {/* Fundo escuro e modal */}
       {isOpen && (
-        <div className="fixed z-50 inset-0 flex justify-items-center items-center justify-center bgBlur">
+        <div className="fixed z-50 inset-0 flex justify-items-center items-center justify-center bgBlur" onClick={() => setIsOpen(false)}>
             
-          <div className="z-50 fixed bg-slate-800 py-6 rounded-4xl shadow-lg w-[60%] max-lg:w-[90%] h-[80%] max-lg:h-[50%] border-[1px] border-slate-500 flex flex-col space-y-2 justify-between">
+          <div onClick={(e) => e.stopPropagation()} className="z-50 fixed bg-slate-800 py-6 rounded-4xl shadow-lg w-[60%] max-lg:w-[90%] h-[80%] max-lg:h-[50%] border-[1px] border-slate-500 flex flex-col space-y-2 justify-between">
 
-            <div className=" flex items-center p-2 justify-center max-md:flex-col-reverse  text-center  border-b-[1px] border-slate-500 max-md:text-xl">
+            <div  className=" flex items-center p-2 justify-center max-md:flex-col-reverse  text-center  border-b-[1px] border-slate-500 max-md:text-xl" >
                   
             <button
               onClick={() => setIsOpen(false)}
