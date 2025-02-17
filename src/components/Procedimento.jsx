@@ -13,10 +13,10 @@ const descProcCard04 = "Acompanhamento próximo e cuidados específicos para gar
 export default function Procedimento() {
     return (
         <div id="procedimento" className="min-h-screen bg-gradient-to-r from-zinc-800 to-zinc-900 flex flex-col items-center justify-center px-3 space-y-20 py-12">
-            <h1 className="text-orange-200 text-5xl max-md:text-3xl">O Procedimento</h1>
-            <p className="text-orange-100 text-2xl text-center px-26 max-md:text-xl">{descProcedimento}</p>
+            <h1 className="text-orange-200 text-5xl max-lg:text-3xl">O Procedimento</h1>
+            <p className="text-orange-100 text-2xl text-center px-26 max-lg:text-xl">{descProcedimento}</p>
 
-            <div className="grid grid-cols-2 gap-12 max-md:grid-cols-1 justify-items-center"> 
+            <div className="grid grid-cols-2 gap-12 max-lg:grid-cols-1 justify-items-center"> 
 
                 <div className="procCard cardProcHover">
 

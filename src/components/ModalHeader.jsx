@@ -1,7 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+
 
 export default function ModalHeader() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden"); // Bloqueia o scroll
+    } else {
+      document.body.classList.remove("overflow-hidden"); // Libera o scroll
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden"); // Garante que o scroll é liberado ao desmontar
+    };
+  }, [isOpen]);
 
   return (
     <div className="flex justify-center items-center ">
@@ -16,7 +30,7 @@ export default function ModalHeader() {
       {/* Fundo escuro e modal */}
       {isOpen && (
         <div className="fixed z-50 inset-0 flex  items-center justify-center bgBlur">
-          <div className="z-50 fixed bg-slate-800 py-6 rounded-4xl shadow-lg w-[60%] h-[80%] border-[1px] border-slate-500 flex flex-col space-y-2 justify-between">
+          <div className="z-50 fixed bg-slate-800 py-6 rounded-4xl shadow-lg w-[60%] max-lg:w-[90%] h-[80%] max-lg:h-[60%] border-[1px] border-slate-500 flex flex-col space-y-2 justify-between">
             <div className="w-full flex  max-md:flex-col-reverse items-center justify-items-center text-center justify-between border-b-[1px] border-slate-500 max-md:text-xl">
                   {/* Botão para fechar */}
             <h2 className="text-orange-200 text-4xl text-left px-8 py-4 max-md:text-3xl">Sobre a Abdominoplastia</h2>
@@ -32,7 +46,7 @@ export default function ModalHeader() {
             </h2>
             <p className="text-gray-100 px-8 py-2 text-lg max-md:text-md">A abdominoplastia é uma cirurgia que visa remodelar o abdômen, removendo o <br /> excesso de pele e gordura, além de corrigir a musculatura abdominal quando <br /> necessário.</p>
 
-            <div className="cardAlert px-8 py-10 m-4 bg-slate-700 text-white text-lg rounded-3xl border-l-6 border-blue-500 max-md:text-sm">
+            <div className="cardAlert">
             <strong>Importante:</strong> O sucesso da cirurgia depende tanto do procedimento quanto dos cuidados pós-operatórios.
             </div>
           </div>

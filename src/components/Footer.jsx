@@ -1,5 +1,5 @@
-import qrCode from '../assets/img/qrCode.jpeg';
-import logo from '../assets/img/LOGO_TRANSPARENTE_1.png';
+const qrCode = '../public/img/qrCode.jpeg';
+const logo = '../public/img/LOGO_TRANSPARENTE_1.png';
 
 
 export default function Footer() {

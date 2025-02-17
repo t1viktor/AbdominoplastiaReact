@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+const modalimg01 = '../public/img/pacienteDeitado.jpg';
+
 const tituloModal = "Cuidados Imediatos e Gerais";
 
 export default function Modal01() {
@@ -27,31 +29,49 @@ export default function Modal01() {
       {/* Fundo escuro e modal */}
       {isOpen && (
         <div className="fixed z-50 inset-0 flex items-center justify-center bgBlur">
-          <div className="bg-gradient-to-r from-[#1F2937] to-[#2a3a50] py-6 rounded-2xl shadow-lg w-[50%] h-[95%] overflow-y-scroll text-center justify-items-center space-y-4 max-md:w-[80%] max-md:h-[80%]">
+          <div className="modalCuidados">
             <div className="border-b-[1px] w-full px-4 border-gray-700 flex justify-between max-md:flex-col-reverse items-center">
-              <h2 className="text-3xl text-orange-200 font-semibold mb-2 py-2 max-md:text-xl">
+              <h2 className="modalCuidadoTittle">
                 {tituloModal}
               </h2>
               <button
                 onClick={() => setIsOpen(false)}
-                className="px-4 w-20 py-2 cursor-pointer duration-300 hover:bg-gray-900 hover:text-orange-200 bg-gray-800 text-white rounded-md max-md:text-sm"
+                className="modalCuidadoBtn"
               >
                 Fechar
               </button>
             </div>
 
             <img
-              className="w-[90%] h-90 rounded-lg border-[1px] border-orange-200 max-md:h-50"
-              src="https://abdominoplastia.vercel.app/img/pacienteDeitado.jpg"
+              className="imgModalCuidados"
+              src={modalimg01}
               alt=""
             />
 
-            <p className="text-gray-300 mb-4">
+            <p className="pModalCuidados">
               Após a abdominoplastia, o corpo precisa de um período de
               recuperação para se ajustar e cicatrizar. Siga as orientações
               abaixo para proteger a área operada e reduzir o risco de
               complicações:
             </p>
+
+            <ul className="ulModalCuidados">
+              <li className="liModalCuidados">Evite esforços físicos: Nos primeiros 15 dias, evite qualquer tipo de esforço ou movimento brusco. Isso inclui carregar peso, subir escadas em excesso ou fazer exercícios físicos.</li>
+              <li className="liModalCuidados">Repouse adequadamente: O repouso é essencial nos primeiros dias. Prefira descansar em uma posição levemente inclinada, com o tronco elevado e os joelhos flexionados para aliviar a tensão na área abdominal.</li>
+              <li className="liModalCuidados">Movimente-se com cuidado: Movimente-se devagar e, sempre que possível, com o auxílio de outra pessoa, principalmente nas primeiras 48 horas. Pequenas caminhadas ajudam a ativar a circulação e prevenir trombose.</li>
+              <li className="liModalCuidados">Atenção aos sinais de alerta: Caso observe sangramentos, febre, dor intensa e persistente, vermelhidão ou inchaço anormal, entre em contato com sua equipe médica imediatamente.</li>
+            </ul>
+
+            <h2 className="text-blue-400 text-3xl">Sinais de Alerta</h2>
+            <div className="cardAlert space-y-3">
+              <h2 className="text-yellow-500 text-xl text-left">Contate seu médico imediatamente se observar:</h2>
+              <ul className="list-disc text-left font-normal">
+                <li>Sangramentos</li>
+                <li>Febre</li>
+                <li>Dor intensa e persistente</li>
+                <li>Vermelhidão ou inchaço anormal</li>
+              </ul>
+            </div>
           </div>
         </div>
       )}
