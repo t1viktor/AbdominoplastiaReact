@@ -30,7 +30,7 @@ export default function Modal02() {
       {isOpen && (
         <div className="fixed z-50 inset-0 flex items-center justify-center bgBlur">
           <div className="modalCuidados">
-            <div className="border-b-[1px] w-full px-4 border-gray-700 flex justify-between max-md:flex-col-reverse items-center">
+            <div className="border-b-[1px] w-full px-4 border-gray-700 flex justify-between flex-col-reverse items-center">
               <h2 className="modalCuidadoTittle">
                 {tituloModal}
               </h2>
