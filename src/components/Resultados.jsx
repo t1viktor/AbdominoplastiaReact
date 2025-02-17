@@ -20,7 +20,7 @@ export default function Resultados() {
                 </div>
 
                 <div className="grid grid-cols-1 max-lg:grid-cols-3 gap-4 items-center justify-items-center">
-                    <div className="cardResultados">
+                    <div className="hidden">
                         <h2 className="cardNum text-5xl font-semibold">97%</h2>
                         <p className="text-gray-400 text-xl">índice de satisfação</p>
                     </div>

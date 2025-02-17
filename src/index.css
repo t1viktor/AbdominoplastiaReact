@@ -59,7 +59,7 @@
 }
 
 .gridCards{
-    @apply grid grid-cols-3 w-[80%] justify-items-center max-lg:grid-cols-3 max-lg:space-y-2;
+    @apply hidden grid-cols-3 w-[80%] justify-items-center max-lg:grid-cols-3 max-lg:space-y-2;
 }
 
 .cardHeader{

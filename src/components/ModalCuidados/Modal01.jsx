@@ -28,8 +28,8 @@ export default function Modal01() {
 
       {/* Fundo escuro e modal */}
       {isOpen && (
-        <div className="fixed z-50 inset-0 flex items-center justify-center bgBlur">
-          <div className="modalCuidados">
+        <div className="fixed z-50 inset-0 flex items-center justify-center bgBlur" onClick={() => setIsOpen(false)}>
+          <div className="modalCuidados" onClick={(e) => e.stopPropagation()}>
             <div className="border-b-[1px] w-full px-4 border-gray-700 flex flex-col-reverse items-center">
               <h2 className="modalCuidadoTittle">
                 {tituloModal}
