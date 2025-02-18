@@ -19,11 +19,7 @@ export default function Resultados() {
                     <ModalResultados />
                 </div>
 
-                <div className="grid grid-cols-1 max-lg:grid-cols-3 gap-4 items-center justify-items-center">
-                    <div className="hidden">
-                        <h2 className="cardNum text-5xl font-semibold">97%</h2>
-                        <p className="text-gray-400 text-xl">índice de satisfação</p>
-                    </div>
+                <div className="grid grid-cols-1 max-lg:grid-cols-2 gap-4 items-center justify-items-center">
 
                     <div className="cardResultados">
                         <h2 className="cardNum text-gray-100 text-5xl font-semibold">30</h2>
